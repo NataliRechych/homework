@@ -2,16 +2,32 @@ body{
 	padding: 0;
 	margin: 0;
 	font-family: "Arial", sans-serif; 
-	max-width: 100%; 
+	background-color: white;
+    overflow: auto;
+    box-sizing: border-box;
 }
 
-h1, h2 {
+h1,h2 {
+	padding: 50px;
 	 text-transform: uppercase;
-	 color: black;
+	 font-weight: 800;
+}
+
+
+h1 {	
+	 color:black;
+	 font-size: 4em;
+}
+
+h2 {
+	 color: rgb(0,26,51);
+	 font-size: 2.3em;
 }
 
 p{
 	color: grey;
+	font-weight: 200;
+    font-size: 22px;
 }
 
 a{
@@ -51,17 +67,69 @@ nav ul{
 nav ul li{
 	padding: 0 0.888em;
 	display: inline-block;
-	text-decoration: none;
-}
+	}
 
 nav ul li a:hover{
 	color: black;
 	font-weight: bold;
 }
+
 section{
 	position: relative;
 	display: block;
 }
-h1.first-section {
-	background: url("https://www.aviasales.ru/blog/wp-content/uploads/2019/02/photo-1542403757-f71827a69ee1-1.jpeg");
+
+.first-section {
+	margin-top: 5%;
+	height: 130vh;
+	background-image: url(../images/5.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: flex;
+  align-items: center;
+}
+
+.text-wrapper h1{
+	width:70%;
+	padding: 200px 10px 100px 50px;
+	color: white;
+	font-weight: 900;
+	line-height: 1.1em;
+	font-size: 5em;
+}
+
+.main-button {
+
+	padding: 5px;
+	display: block;
+	background-color: black;
+	border-radius: 5px;
+	color:#ffffff;
+	min-width: 150px;
+	text-align: center;
+	}
+
+.great-font {
+	display block;
+	font-size: 3em;
+	font-weight: 0.8;
+}
+.flex-section{
+	display: flex;
+	justify-content:space-around;
+	margin: 10px;
+
+}
+ .flex-section img {
+ 	display:block;
+ 	width:400px;
+}
+.flex-section div{
+	display:block;
+	padding: 15px;
+	text-align: center;
+}
+.button-center{
+	display: flex;
+	justify-content: center;
 }
